@@ -32,7 +32,7 @@ development:
   username: postgres
 
   # The password associated with the postgres role (username).
-  #password:
+  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -58,9 +58,6 @@ development:
 test:
   <<: *default
   database: rails_sample_test
-  username: postgres
-  password:
-  host: db
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -83,5 +80,4 @@ test:
 production:
   <<: *default
   database: rails_sample_production
-  username: postgres
   password: <%= ENV['RAILS_SAMPLE_DATABASE_PASSWORD'] %>
