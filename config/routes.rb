@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   # postsフォルダ内ページ表示用
   get "posts/index" => "posts#index"
   get "posts/new" => "posts#new"
@@ -12,6 +13,9 @@ Rails.application.routes.draw do
   # homeフォルダ内ページ表示用
   get "/" => "home#top"
   get "about" => "home#about"
+=======
+  get 'home/top'
+>>>>>>> parent of 5e33c34... update view
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
