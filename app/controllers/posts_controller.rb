@@ -32,5 +32,4 @@ class PostsController < ApplicationController
     @post.destroy
     redirect_to("/posts/index")
   end
-  
 end
